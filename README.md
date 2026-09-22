@@ -199,13 +199,14 @@ email = email.lower().strip()
 
 ### 4. Missing Data Strategy
 ```python
-# Critical fields → Flag for review
-if pd.isnull(email) or pd.isnull(phone):
-    row['status'] = 'REVIEW_REQUIRED'
+# Validation tracking
+if not validate_email(email):
+    row['validation_status'] = 'INVALID'
+    row['validation_issues'] += 'Invalid email'
 
-# Non-critical → Use defaults
-if pd.isnull(company):
-    row['company'] = 'Unknown'
+if not validate_phone(phone):
+    row['validation_status'] = 'INVALID'
+    row['validation_issues'] += 'Invalid phone'
 ```
 
 ## 📈 Data Quality Metrics

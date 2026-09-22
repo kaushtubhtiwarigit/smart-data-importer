@@ -1,0 +1,11 @@
+customer_name,ph_no,mail,company_name
+John Doe,5551234567,JOHN@GMAIL.COM,Acme Corp
+Jane Smith,(555) 987-6543,jane.smith@example.com,Tech Inc
+Bob Johnson,555.123.4567,bob @yahoo.com,  
+alice williams,+1-555-999-8888,alice@test.com,StartupXYZ
+Charlie Brown,invalid,charlie@,Big Company
+David Lee,5559998877,david.lee@corp.com,Global Ltd
+Emma Davis,555-777-6666,emma@example.com,
+Frank Miller,5551112222,frank@test,Innovation Co
+Grace Taylor,(555)333-4444,grace.taylor@email.com,Enterprise LLC
+Henry Wilson,555 888 9999,henry@company.com,Solutions Inc
